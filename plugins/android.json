@@ -12,6 +12,9 @@
     },
     "com.unarin.cordova.beacon": {
       "PACKAGE_NAME": "covid.test.distance"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "covid.test.distance"
     }
   },
   "dependent_plugins": {

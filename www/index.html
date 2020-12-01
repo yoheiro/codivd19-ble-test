@@ -33,6 +33,14 @@
                <li>n > 2.0 : 障害物に吸収され減衰しながら伝搬する空間</li>
            </ul>
         </div>
+        <div id="getlog">
+            <button id="startlog" onclick="startlog()">ログ開始</button>
+            <button id="stoplog" onclick="stoplog()">ログ停止</button>
+            <a id="download" href="#" download="test.csv" onclick="handleDownload()">ログ保存</a>
+        <p>注意</p>
+        <p>アプリを再起動するとログが上書きされます。</p>
+        
+        </div>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
     </body>
