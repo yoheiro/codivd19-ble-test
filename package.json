@@ -26,7 +26,8 @@
     "plugins": {
       "cordova-plugin-whitelist": {},
       "com.unarin.cordova.beacon": {},
-      "cordova-plugin-file": {}
+      "cordova-plugin-file": {},
+      "Bluetooth": {}
     },
     "platforms": [
       "android"

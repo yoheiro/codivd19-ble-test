@@ -13,16 +13,33 @@
 <div id=setconfig></div>
 
         <div id="scan">
-<div id="beacon55"></div>
-<div id="beacon54"></div>
-<div id="beacon58"></div>
+            <div id="beacon56">56</div>
+            <div id="beacon57">57</div>
+            <div id="beacon59">59</div>
+            <div id="beacon55">55</div>
+            <div id="beacon54">54</div> 
+            <div id="beacon58">58</div>
         </div>
+        <hr size="5">
+        <p>検索するビーコンの追加</p>
+        <div id="addbeacon">
+            <input type="text" id="addminor"><button id="addbe" onclick="addbe()">ADD</button><div>※minor値を指定</div>
+            <p>注意</p>
+            <p>反映に15秒ほどかかります</p>
+        </div>
+        <hr size="5">
         <p >
-            <div id="num">N=2</div>
+            <div id="num">N= 2</div>
         </p>
+        
         <p><form>
-        <input type="range" id="nnum" min="0" max="4" step="0.05">
-        <input type="reset" name="bt01" value="リセット">
+            <div style="display: table;width: 100%;">
+            <div style="display: table-cell;text-align: left;">0.0</div>
+            <input type="range" id="nnum" class="rangeslider"　 min="0" max="4" step="0.01" value="2">
+            <div style="display: table-cell;text-align: right;">4.0</div>
+        
+           </div>
+        <input type="reset" name="bt01" value="リセット" onclick="n=2">
     </form>
     </p>
 
@@ -31,16 +48,35 @@
                <li>n = 2.0 : 障害物のない理想空間</li>
                <li>n < 2.0 : 電波が反射しながら伝搬する空間</li>
                <li>n > 2.0 : 障害物に吸収され減衰しながら伝搬する空間</li>
+               <li>n =   0 : 受信停止</li>
            </ul>
         </div>
+        <hr size="5">
         <div id="getlog">
             <button id="startlog" onclick="startlog()">ログ開始</button>
             <button id="stoplog" onclick="stoplog()">ログ停止</button>
+            <br>
+            <input type="text" id="savedata">
+
             <a id="download" href="#" download="test.csv" onclick="handleDownload()">ログ保存</a>
+            
         <p>注意</p>
-        <p>アプリを再起動するとログが上書きされます。</p>
+        <p><s>アプリを再起動するとログが上書きされます。</s></p>
+        <hr size="5">
+        <p>更新情報</p>
+        <hr>
+        <div>
+        <ol>
+            <li>12月14日</li>
+            <li> ・ビーコン追加機能(動作未確認)</li>
+            <li> ・細かな不具合の調整</li>
+            <li> ・UIの変更</li>
+            <li> ・ファイル保存名の変更</li>
+        </ol>
+        </div>
         
         </div>
+        <hr>
         <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
     </body>

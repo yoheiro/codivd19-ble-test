@@ -105,3 +105,13 @@ h1 {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
 }
+
+.rangeslider {
+    display: table-cell;
+    width: 100%;
+    text-align: center;
+    
+  }
+  ol {
+    list-style-type: none;
+  }
